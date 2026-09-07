@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://link-shortener-usbd.onrender.com';
 
 // Элементы DOM
 const shortUrlForm = document.getElementById('shortUrlForm');
