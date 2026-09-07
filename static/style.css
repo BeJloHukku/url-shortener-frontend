@@ -74,14 +74,14 @@ input:focus {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-button:hover {
+/* button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
-}
+} */
 
-button:active {
+/* button:active {
     transform: translateY(0);
-}
+} */
 
 .card-result {
     animation: slideIn 0.3s ease-out;
