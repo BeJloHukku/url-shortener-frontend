@@ -91,16 +91,17 @@ customUrlForm.addEventListener('submit', async (e) => {
 });
 
 // Копирование ссылки
-copyBtn.addEventListener('click', async () => {
-    const url = resultLink.textContent;
-    try {
-        await navigator.clipboard.writeText(url);
-        const originalText = copyBtn.textContent;
-        copyBtn.textContent = 'Скопировано!';
-        setTimeout(() => {
-            copyBtn.textContent = originalText;
-        }, 2000);
-    } catch (error) {
-        showError('Не удалось скопировать ссылку');
-    }
+copyBtn.addEventListener('click', () => {
+    copyBtn.textContent = 'Скопировано!';
+    // const url = resultLink.textContent;
+    // try {
+    //     await navigator.clipboard.writeText(url);
+    //     const originalText = copyBtn.textContent;
+    //     copyBtn.textContent = 'Скопировано!';
+    //     setTimeout(() => {
+    //         copyBtn.textContent = originalText;
+    //     }, 2000);
+    // } catch (error) {
+    //     showError('Не удалось скопировать ссылку');
+    // }
 });
